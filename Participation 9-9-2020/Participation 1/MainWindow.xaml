@@ -1,0 +1,27 @@
+﻿<Window x:Class="Participation_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Participation_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FF661212" Offset="1"/>
+            <GradientStop Color="#FF7C4343" Offset="0.767"/>
+            <GradientStop Color="#FF3E2121" Offset="0.196"/>
+            <GradientStop Color="#FF232B42" Offset="0.574"/>
+            <GradientStop Color="#FFFBF2FA"/>
+            <GradientStop Color="#FF5F4647" Offset="0.117"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="90,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="24" Background="White" TextChanged="TextBox_TextChanged"/>
+        <Label Content="MIS 3033 Participation" HorizontalAlignment="Center" Height="72" VerticalAlignment="Top" Width="440" Background="{x:Null}" FontSize="48" RenderTransformOrigin="0.526,0.517" FontFamily="Garamond"/>
+        <TextBox x:Name="txtAge" HorizontalAlignment="Left" Height="23" Margin="90,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135"/>
+        <Button x:Name="btnGo" Content="Go!" HorizontalAlignment="Center" Height="77" Margin="0,299,0,0" VerticalAlignment="Top" Width="192" FontSize="48" MouseEnter="btnGo_MouseEnter" Click="btnGo_Click" Background="White" FontFamily="Garamond"/>
+
+    </Grid>
+</Window>
