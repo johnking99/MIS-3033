@@ -20,10 +20,10 @@ namespace Participation_1
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
-            txtAge.Text = string.Empty;
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -33,19 +33,25 @@ namespace Participation_1
 
         private void btnGo_MouseEnter(object sender, MouseEventArgs e)
         {
-            MessageBox.Show("You have entered the button!", "Entered");
+           
+            
         }
 
         private void btnGo_Click(object sender, RoutedEventArgs e)
         {
-            string name, age;
+            string name;
             name = txtName.Text;
-            age = txtName.Text;
+            DatePicker date;
 
-            int ageAsNumber = Convert.ToInt32(age);
+            string age;
+            age = txtAge.Text;
 
-
-            MessageBox.Show($"Welcome {name} who is {age}");
+            /*int age;
+            age = date / 365;
+            could not figure out the conversion from date picker to days
+            lecutre not found on Teams - wasn't in the usual place
+            insert age after "is" */
+            MessageBox.Show($"Welcome {name} who is {age} ");
 
         }
     }
